@@ -1,0 +1,20 @@
+# A simple cobaya likelihood for SO
+likelihood:
+  so.toy_likelihood:
+    data_folder: null
+
+    sim_id: null
+
+    select: tt-te-ee
+
+    experiments:
+      - LAT:
+        - 93  # GHz
+        - 145 # GHz
+        - 225 # GHz
+      # - Planck:
+      #   - 100 # GHz
+      #   - 143 # GHz
+      #   - 217 # GHz
+
+    lmax: 6002
