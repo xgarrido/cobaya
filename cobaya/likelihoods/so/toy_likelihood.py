@@ -22,7 +22,7 @@ class toy_likelihood(Likelihood):
                 "likelihood property 'data_folder'.")
 
         # State requisites to the theory code
-        self.requested_cls = ["tt", "ee", "te"]
+        self.requested_cls = ["tt", "te", "ee"]
         self._prepare_data()
         pass
 
