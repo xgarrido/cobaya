@@ -42,7 +42,6 @@ class toy_likelihood(Likelihood):
         if differences:
             raise LoggedError(
                 self.log, "Configuration error in parameters: %r.", differences)
-        np.random.seed(666)
         self._prepare_data()
 
     def add_theory(self):
