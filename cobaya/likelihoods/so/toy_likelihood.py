@@ -184,6 +184,4 @@ class toy_likelihood(Likelihood):
                         fg_model[s, comp, f1, f2] = model[s, comp][c1, c2]
                         fg_model[s, "all", f1, f2] += fg_model[s, comp, f1, f2]
 
-        import pickle
-        pickle.dump(fg_model, open("/tmp/fg_model.pkl", "wb"))
         return fg_model
